@@ -6,7 +6,7 @@ TableName = 'CRCVisitorCounterDB'
 def lambda_handler(event, context):
     
     '''
-    deata = client.get_item(
+    data = client.get_item(
         TableName='CRCVisitorCounterDB',
         Key = {
             'stat': {'S': 'view-count'}
