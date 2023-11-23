@@ -1,5 +1,5 @@
 import json, boto3
-#comment
+
 client = boto3.client('dynamodb')
 TableName = 'CRCVisitorCounterDB'
 
@@ -30,4 +30,5 @@ def lambda_handler(event, context):
     
     return {      
             'statusCode': 200,
+            print('pants'),
             'body': value}
